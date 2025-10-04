@@ -11,6 +11,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back"
+        android:contentDescription="Zurück"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerToolbar"
+        app:tint="@android:color/black" />
+
     <!-- Centered card below the toolbar -->
     <androidx.cardview.widget.CardView
         android:layout_width="300dp"
