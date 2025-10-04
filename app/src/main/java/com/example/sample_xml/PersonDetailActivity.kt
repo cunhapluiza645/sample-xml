@@ -1,6 +1,7 @@
 package com.example.sample_xml
 
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,9 @@ class PersonDetailActivity : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.headerToolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(true)
+
+        val backButton: ImageButton = findViewById(R.id.backButton)
+        backButton.setOnClickListener { finish() }
 
         val name = intent.getStringExtra("name")
         val imageResId = intent.getIntExtra("imageResId", R.drawable.ic_person)
