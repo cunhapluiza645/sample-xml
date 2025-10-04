@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sample-xml</string>
+    <string name="people_telekom">Persons@Telekom</string>
+    <string name="suche_nach_name">🔍 Suche nach Name...</string>
+</resources>
