@@ -1,11 +1,13 @@
 package com.example.sample_xml
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.net.toUri
 
 class PersonDetailActivity : AppCompatActivity() {
 
@@ -34,5 +36,12 @@ class PersonDetailActivity : AppCompatActivity() {
         imageView.setImageResource(imageResId)
         emailText.text = email
         mobileText.text = mobile
+
+        emailText.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SENDTO).apply {
+                data = "mailto:$email".toUri()
+            }
+            startActivity(intent)
+        }
     }
 }
