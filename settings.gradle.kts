@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "sample-xml"
 include(":app")
- 
+include(":benchmark")
